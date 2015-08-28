@@ -71,10 +71,12 @@ But there are technical changes:
 The rebranding is necessary for other reasons too:
 
 1. We do not want to be associated with NoMachine NX3. We are not just maintaining a legacy branch; we are actively developing the codebase.
-2. "nx-libs" is confusing. We provide 2 executables (Xccagent and Xccproxy) in addition to the libraries.
-3. We do not want people to think that they have to link against our GPLv2 code in order to use Xccc. For most users, calling Xcccagent and Xcccproxy, and possibly re-embedding them, will be sufficient.
-4. We want to have fundamentally different policies to working with upstream X.org. Hopefully ["Upstream First"](http://community.redhat.com/blog/2015/03/upstream-first-turning-openstack-into-an-nfv-platform/), but we need to reach [concensus](http://www.theopensourceway.org/book/The_Open_Source_Way-Stuff_everyone_knows_and_forgets_anyway-Seek_consensus_-_use_voting_as_a_last_resort.html) on that 1st.
-5. [The specter of bundled libraries](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699) still haunts nx-libs.
+2. NoMachine 4 takes a fundamentally different appraoch with server-side-rendering via video codecs, even for 2D apps.
+3. "nx-libs" is confusing. We provide 2 executables (Xccagent and Xccproxy) in addition to the libraries.
+4. We do not want people to think that they have to link against our GPLv2 code in order to use Xccc. For most users, calling Xcccagent and Xcccproxy, and possibly re-embedding them, will be sufficient.
+5. We want to have fundamentally different policies to working with upstream X.org. Hopefully ["Upstream First"](http://community.redhat.com/blog/2015/03/upstream-first-turning-openstack-into-an-nfv-platform/), but we need to reach [concensus](http://www.theopensourceway.org/book/The_Open_Source_Way-Stuff_everyone_knows_and_forgets_anyway-Seek_consensus_-_use_voting_as_a_last_resort.html) on that 1st.
+6. It is too difficult to try to rework the ["NX technology" wikipedia page](https://en.wikipedia.org/wiki/NX_technology) to separate nx-libs 3 vs NX 3 vs NX4. I would rather perform the rebranding, create an Xccc page, and then update the NX page. And this highlights the larger communication that we have.
+7. [The specter of bundled libraries](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699) still haunts nx-libs.
 
 
 ###  This page is unprofessional!
