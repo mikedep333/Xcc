@@ -74,7 +74,7 @@ The rebranding is necessary for other reasons too:
 2. "nx-libs" is confusing. We provide 2 executables (Xccagent and Xccproxy) in addition to the libraries.
 3. We do not want people to think that they have to link against our GPLv2 code in order to use Xccc. For most users, calling Xcccagent and Xcccproxy, and possibly re-embedding them, will be sufficient.
 4. We want to have fundamentally different policies to working with upstream X.org. Hopefully ["Upstream First"](http://community.redhat.com/blog/2015/03/upstream-first-turning-openstack-into-an-nfv-platform/), but we need to reach [concensus](http://www.theopensourceway.org/book/The_Open_Source_Way-Stuff_everyone_knows_and_forgets_anyway-Seek_consensus_-_use_voting_as_a_last_resort.html) on that 1st.
-5. The specter of bundled libraries [still haunts](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699) nx-libs.
+5. [The specter of bundled libraries](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699) still haunts nx-libs.
 
 
 ###  This page is unprofessional!
