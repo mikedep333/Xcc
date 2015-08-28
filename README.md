@@ -66,7 +66,7 @@ But there are technical changes:
 
 1. No more bundled libraries once 3.6.0 is released! (The 3.6.x branch currently has most of them removed.)
 2. We are adding new features like replacing TCP sockets with UNIX sockets.
-3. Seriously, do you have any idea [how bad](http://www.theopensourceway.org/book/The_Open_Source_Way-How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL.html) bundled libraries are? Some of them were modified too.
+3. Seriously, do you have any idea [how bad](http://www.theopensourceway.org/book/The_Open_Source_Way-How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL.html) bundled libraries are? Some of them were *modified* too.
 
 The rebranding is necessary for other reasons too:
 
@@ -75,3 +75,8 @@ The rebranding is necessary for other reasons too:
 3. We do not want people to think that they have to link against our GPLv2 code in order to use Xccc. For most users, calling Xcccagent and Xcccproxy, and possibly re-embedding them, will be sufficient.
 4. We want to have fundamentally different policies to working with upstream X.org. Hopefully ["Upstream First"](http://community.redhat.com/blog/2015/03/upstream-first-turning-openstack-into-an-nfv-platform/), but we need to reach [concensus](http://www.theopensourceway.org/book/The_Open_Source_Way-Stuff_everyone_knows_and_forgets_anyway-Seek_consensus_-_use_voting_as_a_last_resort.html) on that 1st.
 5. The specter of bundled libraries [still haunts](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699) nx-libs.
+
+
+###  This page is unprofessional!
+
+[The day may come when we gain lots of corporate sponsors; when we forsake our wit and break all bonds of humor; but it is not this day! This day we jest!](https://youtu.be/EXGUNvIFTQw?t=24)
