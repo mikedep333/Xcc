@@ -35,9 +35,9 @@ Xccc eliminates most of the X11 round-trips. This improves performance, even for
 
 ### But I thought that newer toolkits use XCB, and are therefore unaffected by X11 round-trips.
 
-The use of XCB causes them to use [fewer](https://www.youtube.com/watch?v=G0zNWswcqMg) round-trips, and be less affected by them.
+The use of XCB does cause them to use [fewer](https://www.youtube.com/watch?v=G0zNWswcqMg) round-trips, and be less affected by them.
 
-However, emperically, they still perform much faster because of the Xccc eliminates most of the round-trips.
+Emperically, they still perform much faster when Xccc eliminates most of the round-trips.
 
 See X.org contributor Bart Massey's [explanation](https://lwn.net/Articles/343506/) for more info.
 
