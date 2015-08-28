@@ -71,16 +71,79 @@
 <p>This also reduces bandwidth consumption, which in turn improves performance for other users sharing the same WAN connection.</p>
 
 <h3>
-<a id="what-do-you-mean-short-circuiting" class="anchor" href="#what-do-you-mean-short-circuiting" aria-hidden="true"><span class="octicon octicon-link"></span></a>What do you mean short-Circuiting?</h3>
+<a id="what-do-you-mean-by-short-circuiting" class="anchor" href="#what-do-you-mean-by-short-circuiting" aria-hidden="true"><span class="octicon octicon-link"></span></a>What do you mean by short-Circuiting?</h3>
 
 <p>We can't tell you; that is our secret sauce!</p>
 
 <h3>
-<a id="sudo-what-do-you-mean-short-circuiting" class="anchor" href="#sudo-what-do-you-mean-short-circuiting" aria-hidden="true"><span class="octicon octicon-link"></span></a>sudo What do you mean short-Circuiting?</h3>
+<a id="sudo-what-do-you-mean-by-short-circuiting" class="anchor" href="#sudo-what-do-you-mean-by-short-circuiting" aria-hidden="true"><span class="octicon octicon-link"></span></a>sudo What do you mean by short-Circuiting?</h3>
 
 <p>OK</p>
 
 <p>Xccc eliminates most of the X11 round-trips. This improves performance, even for newer toolkits.</p>
+
+<h3>
+<a id="but-i-thought-that-newer-toolkits-use-xcb-and-are-therefore-unaffected-by-x11-round-trips" class="anchor" href="#but-i-thought-that-newer-toolkits-use-xcb-and-are-therefore-unaffected-by-x11-round-trips" aria-hidden="true"><span class="octicon octicon-link"></span></a>But I thought that newer toolkits use XCB, and are therefore unaffected by X11 round-trips.</h3>
+
+<p>The use of XCB does cause them to use <a href="https://www.youtube.com/watch?v=G0zNWswcqMg">fewer</a> round-trips, and be less affected by them.</p>
+
+<p>Emperically, they still perform much faster when Xccc eliminates most of the round-trips.</p>
+
+<p>See X.org contributor Bart Massey's <a href="https://lwn.net/Articles/343506/">explanation</a> for more info.</p>
+
+<p>And feel free to send a PR or patch with a (link to a) better/more detailed explanation.</p>
+
+<h3>
+<a id="shouldnt-it-be-xccsc" class="anchor" href="#shouldnt-it-be-xccsc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Shouldn't it be Xccsc?</h3>
+
+<p>We decided to short-Curcuit the s.</p>
+
+<h3>
+<a id="why-are-the-executables-called-xccagent-and-xccproxy" class="anchor" href="#why-are-the-executables-called-xccagent-and-xccproxy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why are the executables called Xccagent and Xccproxy?</h3>
+
+<p>We are all about short-Circuiting!</p>
+
+<p>Also, we wanted to limit their filenames to 8 characters.</p>
+
+<h3>
+<a id="this-sounds-an-awful-like-like-lbx" class="anchor" href="#this-sounds-an-awful-like-like-lbx" aria-hidden="true"><span class="octicon octicon-link"></span></a>This sounds an awful like like <a href="http://keithp.com/%7Ekeithp/talks/lbxpost/">LBX</a>...</h3>
+
+<p>Yes, however:</p>
+
+<ol>
+<li>LBX never supported caching.</li>
+<li>LBX never supported lossy image compression.</li>
+<li>LBX never supported short-Circuiting (eliminating the round-trips).</li>
+</ol>
+
+<h3>
+<a id="this-sounds-an-awful-like-like-nx-libs" class="anchor" href="#this-sounds-an-awful-like-like-nx-libs" aria-hidden="true"><span class="octicon octicon-link"></span></a>This sounds an awful like like <a href="https://github.com/ArcticaProject/nx-libs">nx-libs</a>...</h3>
+
+<p>Yes, we are rebranding nx-libs.</p>
+
+<p>But there are technical changes:</p>
+
+<ol>
+<li>No more bundled libraries once 3.6.0 is released! (The 3.6.x branch currently has most of them removed.)</li>
+<li>We are adding new features like replacing TCP sockets with UNIX sockets.</li>
+<li>Seriously, do you have any idea <a href="http://www.theopensourceway.org/book/The_Open_Source_Way-How_to_tell_if_a_FLOSS_project_is_doomed_to_FAIL.html">how bad</a> bundled libraries are? Some of them were <em>modified</em> too.</li>
+</ol>
+
+<p>The rebranding is necessary for other reasons too:</p>
+
+<ol>
+<li>We do not want to be associated with NoMachine NX3. We are not just maintaining a legacy branch; we are actively developing the codebase.</li>
+<li>"nx-libs" is confusing. We provide 2 executables (Xccagent and Xccproxy) in addition to the libraries.</li>
+<li>We do not want people to think that they have to link against our GPLv2 code in order to use Xccc. For most users, calling Xcccagent and Xcccproxy, and possibly re-embedding them, will be sufficient.</li>
+<li>We want to have fundamentally different policies to working with upstream X.org. Hopefully <a href="http://community.redhat.com/blog/2015/03/upstream-first-turning-openstack-into-an-nfv-platform/">"Upstream First"</a>, but we need to reach <a href="http://www.theopensourceway.org/book/The_Open_Source_Way-Stuff_everyone_knows_and_forgets_anyway-Seek_consensus_-_use_voting_as_a_last_resort.html">concensus</a> on that 1st.</li>
+<li>
+<a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=655699">The specter of bundled libraries</a> still haunts nx-libs.</li>
+</ol>
+
+<h3>
+<a id="this-page-is-unprofessional" class="anchor" href="#this-page-is-unprofessional" aria-hidden="true"><span class="octicon octicon-link"></span></a>This page is unprofessional!</h3>
+
+<p><a href="https://youtu.be/EXGUNvIFTQw?t=24">The day may come when we gain lots of corporate sponsors; when we forsake our wit and break all bonds of humor; but it is not this day! This day we jest!</a></p>
       </section>
 
     </div>
